@@ -1,9 +1,29 @@
-#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+from setuptools import setup
 
-# This is a shim to allow GitHub to detect the package, build is done with poetry
-# Taken from https://github.com/Textualize/rich
+package_dir = \
+{'': 'src'}
 
-import setuptools
+packages = \
+['aiohappyeyeballs']
 
-if __name__ == "__main__":
-    setuptools.setup(name="aiohappyeyeballs")
+package_data = \
+{'': ['*']}
+
+setup_kwargs = {
+    'name': 'aiohappyeyeballs',
+    'version': '2.4.4',
+    'description': 'Happy Eyeballs for asyncio',
+    'author': 'J. Nick Koston',
+    'author_email': 'nick@koston.org',
+    'maintainer': 'None',
+    'maintainer_email': 'None',
+    'url': 'https://github.com/aio-libs/aiohappyeyeballs',
+    'package_dir': package_dir,
+    'packages': packages,
+    'package_data': package_data,
+    'python_requires': '>=3.8',
+}
+
+
+setup(**setup_kwargs)
