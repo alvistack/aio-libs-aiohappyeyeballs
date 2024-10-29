@@ -1,0 +1,5 @@
+python-aiohappyeyeballs source: file-without-copyright-information
+python-aiohappyeyeballs source: no-debian-changes
+python-aiohappyeyeballs source: source-contains-prebuilt-windows-binary
+python-aiohappyeyeballs source: source-is-missing
+python-aiohappyeyeballs source: source-package-encodes-python-version
